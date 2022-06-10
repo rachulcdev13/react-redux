@@ -1,13 +1,18 @@
-import React from 'react'
-
-const Reducer = () => {
-  return (
-    <>
-        <div>
-            <h6>Reducer</h6>
-        </div> 
-    </>
-  )
+import { ADD_TO_CART } from '../Constant'
+const initialState = {
+    cardData: []
 }
+export default function cardItems(state = [], action) {
+    switch (action.type) {
+        case ADD_TO_CART:
+            // console.warn("reducer",action)
+            return [
+                ...state,
+                {cardData: action.data}
+            ]
+        default:
+            return state
+    }
 
-export default Reducer
+
+}

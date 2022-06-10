@@ -1,16 +1,13 @@
-import React from "react"; 
-import HomeContainer from "./Containers/HomeContainer";
-import "./index.css"
-
+import React from 'react'; 
+import HomeContainer from './Containers/HomeContainer'
+import HeaderContainer from './Containers/HeaderContainer'
 function App() {
   return (
-    <><br /><br /><br />
-      <div className="container "> 
-      <h1>App Componets</h1>
+    <div className="App">
+      <HeaderContainer />
+     
       <HomeContainer />
-      </div>
-    </>
-
+    </div>
   );
 }
 

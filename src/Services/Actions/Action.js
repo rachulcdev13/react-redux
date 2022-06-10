@@ -1,13 +1,8 @@
-import React from 'react'
-
-const Action = () => {
-  return (
-    <>
-     <div>
-         <h6>Action</h6>
-     </div> 
-    </>
-  )
-}
-
-export default Action
+import {ADD_TO_CART} from '../Constant'
+export const addToCart =(data)=>{
+    // console.warn("action",data)
+    return {
+        type:ADD_TO_CART,
+        data:data
+    }
+} 
